@@ -39,10 +39,10 @@ func Publisher() {
 	}
 
 	for {
-		text := "Hello MQTT " + time.Now().Format(time.RFC3339)
+		text := "publicado: "+"Hello MQTT " + time.Now().Format(time.RFC3339)
 		token := client.Publish("test/topic", 1, false, text)
 		token.Wait()
-		fmt.Println("Publicado:", text)
+		Writer("./logs/publisher_logs.txt", text + "\n")
 		time.Sleep(2 * time.Second)
 	} 
 }

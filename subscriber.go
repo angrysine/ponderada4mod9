@@ -9,15 +9,17 @@ import (
 )
 
 var messagePubHandlerSub mqtt.MessageHandler = func(client mqtt.Client, msg mqtt.Message) {
-	fmt.Printf("Recebido: %s do tópico: %s com QoS: %d\n", msg.Payload(), msg.Topic(), msg.Qos())
+	var text = fmt.Sprintf("Recebido: %s do tópico: %s com QoS: %d\n", msg.Payload(), msg.Topic(), msg.Qos())
+	Writer("./logs/subscriber_logs.txt",  text+ "\n")
 }
 
 var connectHandlerSub mqtt.OnConnectHandler = func(client mqtt.Client) {
-	fmt.Println("Connected")
+	Writer("subscriber_logs.txt", "connected" + "\n")
 }
 
 var connectLostHandlerSub mqtt.ConnectionLostHandler = func(client mqtt.Client, err error) {
-	fmt.Printf("Connection lost: %v", err)
+	var text = fmt.Sprintf("Connection lost: %v", err)
+	Writer("subscriber_logs.txt",  text+ "\n")
 }
 
 func Subscriber() {
@@ -46,7 +48,4 @@ func Subscriber() {
 		fmt.Println(token.Error())
 		return
 	}
-
-	fmt.Println("Subscriber está rodando. Pressione CTRL+C para sair.")
-	select {} // Bloqueia indefinidamente
 }
