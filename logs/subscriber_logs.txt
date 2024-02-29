@@ -1,0 +1,24 @@
+Recebido: publicado: Hello MQTT 2024-02-29T11:33:43-03:00 do tópico: test/topic com QoS: 1
+
+
+Recebido: publicado: Hello MQTT 2024-02-29T11:33:45-03:00 do tópico: test/topic com QoS: 1
+
+
+Recebido: publicado: Hello MQTT 2024-02-29T11:33:47-03:00 do tópico: test/topic com QoS: 1
+
+
+Recebido: publicado: Hello MQTT 2024-02-29T11:33:50-03:00 do tópico: test/topic com QoS: 1
+
+
+Recebido: publicado: Hello MQTT 2024-02-29T11:33:52-03:00 do tópico: test/topic com QoS: 1
+
+
+Recebido: publicado: Hello MQTT 2024-02-29T11:33:54-03:00 do tópico: test/topic com QoS: 1
+
+
+Recebido: publicado: Hello MQTT 2024-02-29T11:33:56-03:00 do tópico: test/topic com QoS: 1
+
+
+Recebido: publicado: Hello MQTT 2024-02-29T11:33:59-03:00 do tópico: test/topic com QoS: 1
+
+

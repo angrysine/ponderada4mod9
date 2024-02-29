@@ -15,4 +15,4 @@ os arquivos de log são salvos na pasta logs.
 
 ## Vídeo
 
-O vídeo do projeto pode ser encontrado [aqui](https://drive.google.com/file/d/1Z)
+O vídeo do projeto pode ser encontrado [aqui](https://youtu.be/b7IVjVNMpyg)
