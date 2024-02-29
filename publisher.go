@@ -26,7 +26,7 @@ func Publisher() {
 	var broker = os.Getenv("BROKER_ADDR")
 	var port = 8883
 	opts := mqtt.NewClientOptions()
-	opts.AddBroker(fmt.Sprintf("tls://%s:%d", broker, port))
+	opts.AddBroker(fmt.Sprintf("tls://%s%d/mqtt", broker, port))
 	opts.SetClientID("Publisher")
 	opts.SetUsername(os.Getenv("HIVE_USER"))
 	opts.SetPassword(os.Getenv("HIVE_PSWD"))
